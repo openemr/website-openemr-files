@@ -1,0 +1,275 @@
+{
+	"resourceType": "Bundle",
+	"id": "testing-openemr-endpoint-bundle",
+	"type": "collection",
+	"timestamp": "2024-02-20T20:00:43.241070-07:00",
+	"entry": [
+		{
+			"fullUrl": "https://one.openemr.io/a/openemr/apis/default/fhir/Endpoint/OneTestingOpenemrEndpoint",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "OneTestingOpenemrEndpoint",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tOne Testing OpenEMR Endpoint<br/>\n\t\t\tThis is One Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for One Testing OpenEMR",
+				"managingOrganization": {
+					"reference": "Organization/001"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://one.openemr.io/a/openemr/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "https://one.openemr.io/a/openemr/apis/default/fhir/Organization/001",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "001",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tOne Testing OpenEMR Endpoint<br/>\n\t\t\tThis is One Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "One Testing OpenEMR",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(+1) 888-612-0847"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"25 E Center Street"
+						],
+						"city": "Rutland",
+						"state": "VT",
+						"postalCode": "05701",
+						"country": "USA"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/OneTestingOpenemrEndpoint"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "https://two.openemr.io/a/openemr/apis/default/fhir/Endpoint/TwoTestingOpenemrEndpoint",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "TwoTestingOpenemrEndpoint",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tTwo Testing OpenEMR Endpoint<br/>\n\t\t\tThis is Two Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Two Testing OpenEMR",
+				"managingOrganization": {
+					"reference": "Organization/002"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://two.openemr.io/a/openemr/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "https://two.openemr.io/a/openemr/apis/default/fhir/Organization/002",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "002",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tTwo Testing OpenEMR Endpoint<br/>\n\t\t\tThis is Two Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "2"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Two Testing OpenEMR",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(+1) 888-612-0847"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"25 E Center Street"
+						],
+						"city": "Rutland",
+						"state": "VT",
+						"postalCode": "05701",
+						"country": "USA"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/TwoTestingOpenemrEndpoint"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "https://ten.openemr.io/a/openemr/apis/default/fhir/Endpoint/ThreeTestingOpenemrEndpoint",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "ThreeTestingOpenemrEndpoint",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tThree Testing OpenEMR Endpoint<br/>\n\t\t\tThis is Three Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Three Testing OpenEMR",
+				"managingOrganization": {
+					"reference": "Organization/003"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://ten.openemr.io/a/openemr/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "https://ten.openemr.io/a/openemr/apis/default/fhir/Organization/003",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "003",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\tThree Testing OpenEMR Endpoint<br/>\n\t\t\tThis is Three Testing OpenEMR Endpoint\n\t\t</div>"
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "3"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Three Testing OpenEMR",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(+1) 888-612-0847"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"25 E Center Street"
+						],
+						"city": "Rutland",
+						"state": "VT",
+						"postalCode": "05701",
+						"country": "USA"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/ThreeTestingOpenemrEndpoint"
+					}
+				]
+			}
+		}
+	]
+}
