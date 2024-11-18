@@ -1,6 +1,6 @@
 {
 	"resourceType": "Bundle",
-	"id": "testing-openemr-endpoint-bundle",
+	"id": "openemr-endpoint-bundle",
 	"type": "collection",
 	"timestamp": "2024-11-18T08:58:44+00:00"
 }
