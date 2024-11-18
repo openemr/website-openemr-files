@@ -2,7 +2,7 @@
 	"resourceType": "Bundle",
 	"id": "testing-openemr-endpoint-bundle",
 	"type": "collection",
-	"timestamp": "2024-02-20T20:00:43.241070-07:00",
+	"timestamp": "2024-11-18T08:58:44+00:00",
 	"entry": [
 		{
 			"fullUrl": "https://one.openemr.io/a/openemr/apis/default/fhir/Endpoint/OneTestingOpenemrEndpoint",
