@@ -1,87 +1,221 @@
 {
-	"resourceType": "Bundle",
-	"id": "openemr-endpoint-bundle",
-	"type": "collection",
-	"timestamp": "2026-02-28T08:58:44+00:00",
-	"entry": [
-		{
-			"fullUrl": "urn:hcoie-healthcare-endpoint-fhir-r4",
-			"resource": {
-				"resourceType": "Endpoint",
-				"id": "hcoie-healthcare-endpoint-fhir-r4",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">FHIR R4 Endpoint for HCOIE Healthcare — https://snf.shsinc.net/apis/default/fhir</div>"
-				},
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
-						"valueCode": "4.0.1"
-					}
-				],
-				"status": "active",
-				"connectionType": {
-					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-					"code": "hl7-fhir-rest"
-				},
-				"name": "FHIR R4 Endpoint for HCOIE Healthcare",
-				"managingOrganization": {
-					"reference": "Organization/hcoie-healthcare-org-1346218740"
-				},
-				"payloadType": [
-					{
-						"coding": [
-							{
-								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-								"code": "any"
-							}
-						]
-					}
-				],
-				"address": "https://snf.shsinc.net/apis/default/fhir"
-			}
-		},
-		{
-			"fullUrl": "urn:hcoie-healthcare-org-1346218740",
-			"resource": {
-				"resourceType": "Organization",
-				"id": "hcoie-healthcare-org-1346218740",
-				"text": {
-					"status": "generated",
-					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HCOIE Healthcare — NPI 1346218740 — Pomona, CA</div>"
-				},
-				"identifier": [
-					{
-						"system": "http://hl7.org/fhir/sid/us-npi",
-						"value": "1346218740"
-					}
-				],
-				"active": true,
-				"type": [
-					{
-						"coding": [
-							{
-								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
-								"code": "prov",
-								"display": "Healthcare Provider"
-							}
-						]
-					}
-				],
-				"name": "HCOIE Healthcare",
-				"address": [
-					{
-						"city": "Pomona",
-						"state": "CA",
-						"country": "US"
-					}
-				],
-				"endpoint": [
-					{
-						"reference": "Endpoint/hcoie-healthcare-endpoint-fhir-r4"
-					}
-				]
-			}
-		}
-	]
+  "resourceType": "Bundle",
+  "id": "openemr-endpoint-bundle",
+  "type": "collection",
+  "timestamp": "2026-03-30T00:23:04+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:c7c5f29c-d62d-498e-af85-11e4cf1f41de",
+      "resource": {
+        "resourceType": "Endpoint",
+        "id": "c7c5f29c-d62d-498e-af85-11e4cf1f41de",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+            "valueCode": "4.0.1"
+          }
+        ],
+        "status": "active",
+        "connectionType": {
+          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+          "code": "hl7-fhir-rest"
+        },
+        "name": "FHIR R4 Endpoint for SNF Facility",
+        "managingOrganization": {
+          "reference": "Organization/dad13ab8-092d-468b-af5d-38a20a10c7e6"
+        },
+        "payloadType": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                "code": "any"
+              }
+            ]
+          }
+        ],
+        "address": "https://snf.shsinc.net/apis/default/fhir"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dad13ab8-092d-468b-af5d-38a20a10c7e6",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "dad13ab8-092d-468b-af5d-38a20a10c7e6",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1336148840"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "SNF Facility",
+        "address": [
+          {
+            "city": "Pomona",
+            "state": "CA",
+            "country": "US"
+          }
+        ],
+        "endpoint": [
+          {
+            "reference": "Endpoint/c7c5f29c-d62d-498e-af85-11e4cf1f41de"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:88b6e48a-e998-47e2-b7e9-899c5cf580c3",
+      "resource": {
+        "resourceType": "Endpoint",
+        "id": "88b6e48a-e998-47e2-b7e9-899c5cf580c3",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+            "valueCode": "4.0.1"
+          }
+        ],
+        "status": "active",
+        "connectionType": {
+          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+          "code": "hl7-fhir-rest"
+        },
+        "name": "FHIR R4 Endpoint for Wellness Center",
+        "managingOrganization": {
+          "reference": "Organization/92798df9-5600-461c-b090-fa2a51b49cec"
+        },
+        "payloadType": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                "code": "any"
+              }
+            ]
+          }
+        ],
+        "address": "https://wellness.shsinc.net/apis/default/fhir"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:92798df9-5600-461c-b090-fa2a51b49cec",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "92798df9-5600-461c-b090-fa2a51b49cec",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1902111024"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Wellness Center",
+        "address": [
+          {
+            "city": "Pomona",
+            "state": "CA",
+            "country": "US"
+          }
+        ],
+        "endpoint": [
+          {
+            "reference": "Endpoint/88b6e48a-e998-47e2-b7e9-899c5cf580c3"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:add0bb19-28ee-4e96-85f6-046e30d139d9",
+      "resource": {
+        "resourceType": "Endpoint",
+        "id": "add0bb19-28ee-4e96-85f6-046e30d139d9",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+            "valueCode": "4.0.1"
+          }
+        ],
+        "status": "active",
+        "connectionType": {
+          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+          "code": "hl7-fhir-rest"
+        },
+        "name": "FHIR R4 Endpoint for Pomona Valley Hospital Medical Center",
+        "managingOrganization": {
+          "reference": "Organization/42eb3d74-c29d-4ef6-9bf7-69b283df3e30"
+        },
+        "payloadType": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                "code": "any"
+              }
+            ]
+          }
+        ],
+        "address": "https://pvhmc.shsinc.net/apis/default/fhir"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1407813660"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Pomona Valley Hospital Medical Center",
+        "address": [
+          {
+            "city": "Pomona",
+            "state": "CA",
+            "country": "US"
+          }
+        ],
+        "endpoint": [
+          {
+            "reference": "Endpoint/add0bb19-28ee-4e96-85f6-046e30d139d9"
+          }
+        ]
+      }
+    }
+  ]
 }
