@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "openemr-endpoint-bundle",
   "type": "collection",
-  "timestamp": "2026-03-30T00:23:04+00:00",
+  "timestamp": "2026-04-22T21:23:42+00:00",
   "entry": [
     {
       "fullUrl": "urn:uuid:c7c5f29c-d62d-498e-af85-11e4cf1f41de",
@@ -213,6 +213,77 @@
         "endpoint": [
           {
             "reference": "Endpoint/add0bb19-28ee-4e96-85f6-046e30d139d9"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3e2e5254-1058-46b5-ad74-986bb3526a70",
+      "resource": {
+        "resourceType": "Endpoint",
+        "id": "3e2e5254-1058-46b5-ad74-986bb3526a70",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+            "valueCode": "4.0.1"
+          }
+        ],
+        "status": "active",
+        "connectionType": {
+          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+          "code": "hl7-fhir-rest"
+        },
+        "name": "FHIR R4 Endpoint for Nephrology Facility",
+        "managingOrganization": {
+          "reference": "Organization/2bb9648d-6b25-40ca-8c93-a2cda081ed03"
+        },
+        "payloadType": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+                "code": "any"
+              }
+            ]
+          }
+        ],
+        "address": "https://neph.shsinc.net/apis/default/fhir"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2bb9648d-6b25-40ca-8c93-a2cda081ed03",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "2bb9648d-6b25-40ca-8c93-a2cda081ed03",
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1558068759"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Nephrology Facility",
+        "address": [
+          {
+            "city": "Ontario",
+            "state": "CA",
+            "country": "US"
+          }
+        ],
+        "endpoint": [
+          {
+            "reference": "Endpoint/3e2e5254-1058-46b5-ad74-986bb3526a70"
           }
         ]
       }
