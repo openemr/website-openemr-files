@@ -1,292 +1,363 @@
 {
-  "resourceType": "Bundle",
-  "id": "openemr-endpoint-bundle",
-  "type": "collection",
-  "timestamp": "2026-04-22T21:23:42+00:00",
-  "entry": [
-    {
-      "fullUrl": "urn:uuid:c7c5f29c-d62d-498e-af85-11e4cf1f41de",
-      "resource": {
-        "resourceType": "Endpoint",
-        "id": "c7c5f29c-d62d-498e-af85-11e4cf1f41de",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
-            "valueCode": "4.0.1"
-          }
-        ],
-        "status": "active",
-        "connectionType": {
-          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-          "code": "hl7-fhir-rest"
-        },
-        "name": "FHIR R4 Endpoint for SNF Facility",
-        "managingOrganization": {
-          "reference": "Organization/dad13ab8-092d-468b-af5d-38a20a10c7e6"
-        },
-        "payloadType": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-                "code": "any"
-              }
-            ]
-          }
-        ],
-        "address": "https://snf.shsinc.net/apis/default/fhir"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:dad13ab8-092d-468b-af5d-38a20a10c7e6",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "dad13ab8-092d-468b-af5d-38a20a10c7e6",
-        "identifier": [
-          {
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1336148840"
-          }
-        ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-                "code": "prov",
-                "display": "Healthcare Provider"
-              }
-            ]
-          }
-        ],
-        "name": "SNF Facility",
-        "address": [
-          {
-            "city": "Pomona",
-            "state": "CA",
-            "country": "US"
-          }
-        ],
-        "endpoint": [
-          {
-            "reference": "Endpoint/c7c5f29c-d62d-498e-af85-11e4cf1f41de"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:88b6e48a-e998-47e2-b7e9-899c5cf580c3",
-      "resource": {
-        "resourceType": "Endpoint",
-        "id": "88b6e48a-e998-47e2-b7e9-899c5cf580c3",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
-            "valueCode": "4.0.1"
-          }
-        ],
-        "status": "active",
-        "connectionType": {
-          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-          "code": "hl7-fhir-rest"
-        },
-        "name": "FHIR R4 Endpoint for Wellness Center",
-        "managingOrganization": {
-          "reference": "Organization/92798df9-5600-461c-b090-fa2a51b49cec"
-        },
-        "payloadType": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-                "code": "any"
-              }
-            ]
-          }
-        ],
-        "address": "https://wellness.shsinc.net/apis/default/fhir"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:92798df9-5600-461c-b090-fa2a51b49cec",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "92798df9-5600-461c-b090-fa2a51b49cec",
-        "identifier": [
-          {
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1902111024"
-          }
-        ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-                "code": "prov",
-                "display": "Healthcare Provider"
-              }
-            ]
-          }
-        ],
-        "name": "Wellness Center",
-        "address": [
-          {
-            "city": "Pomona",
-            "state": "CA",
-            "country": "US"
-          }
-        ],
-        "endpoint": [
-          {
-            "reference": "Endpoint/88b6e48a-e998-47e2-b7e9-899c5cf580c3"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:add0bb19-28ee-4e96-85f6-046e30d139d9",
-      "resource": {
-        "resourceType": "Endpoint",
-        "id": "add0bb19-28ee-4e96-85f6-046e30d139d9",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
-            "valueCode": "4.0.1"
-          }
-        ],
-        "status": "active",
-        "connectionType": {
-          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-          "code": "hl7-fhir-rest"
-        },
-        "name": "FHIR R4 Endpoint for Pomona Valley Hospital Medical Center",
-        "managingOrganization": {
-          "reference": "Organization/42eb3d74-c29d-4ef6-9bf7-69b283df3e30"
-        },
-        "payloadType": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-                "code": "any"
-              }
-            ]
-          }
-        ],
-        "address": "https://pvhmc.shsinc.net/apis/default/fhir"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
-        "identifier": [
-          {
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1407813660"
-          }
-        ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-                "code": "prov",
-                "display": "Healthcare Provider"
-              }
-            ]
-          }
-        ],
-        "name": "Pomona Valley Hospital Medical Center",
-        "address": [
-          {
-            "city": "Pomona",
-            "state": "CA",
-            "country": "US"
-          }
-        ],
-        "endpoint": [
-          {
-            "reference": "Endpoint/add0bb19-28ee-4e96-85f6-046e30d139d9"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:3e2e5254-1058-46b5-ad74-986bb3526a70",
-      "resource": {
-        "resourceType": "Endpoint",
-        "id": "3e2e5254-1058-46b5-ad74-986bb3526a70",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
-            "valueCode": "4.0.1"
-          }
-        ],
-        "status": "active",
-        "connectionType": {
-          "system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
-          "code": "hl7-fhir-rest"
-        },
-        "name": "FHIR R4 Endpoint for Nephrology Facility",
-        "managingOrganization": {
-          "reference": "Organization/2bb9648d-6b25-40ca-8c93-a2cda081ed03"
-        },
-        "payloadType": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
-                "code": "any"
-              }
-            ]
-          }
-        ],
-        "address": "https://neph.shsinc.net/apis/default/fhir"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:2bb9648d-6b25-40ca-8c93-a2cda081ed03",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "2bb9648d-6b25-40ca-8c93-a2cda081ed03",
-        "identifier": [
-          {
-            "system": "http://hl7.org/fhir/sid/us-npi",
-            "value": "1558068759"
-          }
-        ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-                "code": "prov",
-                "display": "Healthcare Provider"
-              }
-            ]
-          }
-        ],
-        "name": "Nephrology Facility",
-        "address": [
-          {
-            "city": "Ontario",
-            "state": "CA",
-            "country": "US"
-          }
-        ],
-        "endpoint": [
-          {
-            "reference": "Endpoint/3e2e5254-1058-46b5-ad74-986bb3526a70"
-          }
-        ]
-      }
-    }
-  ]
+	"resourceType": "Bundle",
+	"id": "openemr-endpoint-bundle",
+	"type": "collection",
+	"timestamp": "2026-08-13T12:44:27+00:00",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:c7c5f29c-d62d-498e-af85-11e4cf1f41de",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "c7c5f29c-d62d-498e-af85-11e4cf1f41de",
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for SNF Facility",
+				"managingOrganization": {
+					"reference": "Organization/dad13ab8-092d-468b-af5d-38a20a10c7e6"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://snf.shsinc.net/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:dad13ab8-092d-468b-af5d-38a20a10c7e6",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "dad13ab8-092d-468b-af5d-38a20a10c7e6",
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1336148840"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "SNF Facility",
+				"address": [
+					{
+						"city": "Pomona",
+						"state": "CA",
+						"country": "US"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/c7c5f29c-d62d-498e-af85-11e4cf1f41de"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:88b6e48a-e998-47e2-b7e9-899c5cf580c3",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "88b6e48a-e998-47e2-b7e9-899c5cf580c3",
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Wellness Center",
+				"managingOrganization": {
+					"reference": "Organization/92798df9-5600-461c-b090-fa2a51b49cec"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://wellness.shsinc.net/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:92798df9-5600-461c-b090-fa2a51b49cec",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "92798df9-5600-461c-b090-fa2a51b49cec",
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1902111024"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Wellness Center",
+				"address": [
+					{
+						"city": "Pomona",
+						"state": "CA",
+						"country": "US"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/88b6e48a-e998-47e2-b7e9-899c5cf580c3"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:add0bb19-28ee-4e96-85f6-046e30d139d9",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "add0bb19-28ee-4e96-85f6-046e30d139d9",
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Pomona Valley Hospital Medical Center",
+				"managingOrganization": {
+					"reference": "Organization/42eb3d74-c29d-4ef6-9bf7-69b283df3e30"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://pvhmc.shsinc.net/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "42eb3d74-c29d-4ef6-9bf7-69b283df3e30",
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1407813660"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Pomona Valley Hospital Medical Center",
+				"address": [
+					{
+						"city": "Pomona",
+						"state": "CA",
+						"country": "US"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/add0bb19-28ee-4e96-85f6-046e30d139d9"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:3e2e5254-1058-46b5-ad74-986bb3526a70",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "3e2e5254-1058-46b5-ad74-986bb3526a70",
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Nephrology Facility",
+				"managingOrganization": {
+					"reference": "Organization/2bb9648d-6b25-40ca-8c93-a2cda081ed03"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://neph.shsinc.net/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:2bb9648d-6b25-40ca-8c93-a2cda081ed03",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "2bb9648d-6b25-40ca-8c93-a2cda081ed03",
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1558068759"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Nephrology Facility",
+				"address": [
+					{
+						"city": "Ontario",
+						"state": "CA",
+						"country": "US"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/3e2e5254-1058-46b5-ad74-986bb3526a70"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:51934bf2-09a5-44bd-9ab5-b29c1752053c",
+			"resource": {
+				"resourceType": "Endpoint",
+				"id": "51934bf2-09a5-44bd-9ab5-b29c1752053c",
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version",
+						"valueCode": "4.0.1"
+					}
+				],
+				"status": "active",
+				"connectionType": {
+					"system": "http://terminology.hl7.org/CodeSystem/endpoint-connection-type",
+					"code": "hl7-fhir-rest"
+				},
+				"name": "FHIR R4 Endpoint for Epicene Psychological LLC",
+				"managingOrganization": {
+					"reference": "Organization/d11890c4-7be0-4d25-bcb2-29b58e062011"
+				},
+				"payloadType": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/endpoint-payload-type",
+								"code": "any"
+							}
+						]
+					}
+				],
+				"address": "https://cms.epicenepsychological.com/apis/default/fhir"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:d11890c4-7be0-4d25-bcb2-29b58e062011",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "d11890c4-7be0-4d25-bcb2-29b58e062011",
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1548114515"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+								"code": "prov",
+								"display": "Healthcare Provider"
+							}
+						]
+					}
+				],
+				"name": "Epicene Psychological LLC",
+				"address": [
+					{
+						"city": "Mantua Township",
+						"state": "OH",
+						"country": "US"
+					}
+				],
+				"endpoint": [
+					{
+						"reference": "Endpoint/51934bf2-09a5-44bd-9ab5-b29c1752053c"
+					}
+				]
+			}
+		}
+	]
 }
